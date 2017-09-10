@@ -1,0 +1,44 @@
+body {
+  background: #fff url(../img/bg.jpg) no-repeat fixed center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wrapper {
+  display: block;
+  text-align: center;
+  transform: translateY(50%);
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 7px;
+  margin-top: 0;
+  padding-left: 4px;
+  text-transform: uppercase;
+}
+
+button.btn {
+  border: solid 1px #1c5bc3;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 3px 18px;
+}
+
+p.btn_text {
+  color: #1c5bc4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+span.arr {
+  display: inline-block;
+  background: url(../img/btn_arr.png) no-repeat;
+}
