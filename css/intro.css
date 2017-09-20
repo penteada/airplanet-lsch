@@ -9,16 +9,7 @@ body {
 .wrapper {
   display: block;
   text-align: center;
-  transform: translateY(50%);
-}
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  letter-spacing: 7px;
-  margin-top: 0;
-  padding-left: 4px;
-  text-transform: uppercase;
+  transform: translateY(60%);
 }
 
 button.btn {
@@ -26,9 +17,15 @@ button.btn {
   border-radius: 3px;
   background-color: transparent;
   padding: 3px 18px;
+  width: 207px;
+  height: 45px;
+  display: inline-block;
+  position: relative; 
 }
-
-p.btn_text {
+a {
+  text-decoration: none;
+}
+button .btn_text {
   color: #1c5bc4;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
@@ -36,9 +33,28 @@ p.btn_text {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+  padding-right: 12px;
 }
 
-span.arr {
+button .icon-main {
+  background-image: url(../img/btn_arrow.png);
+  height: 14px;
+  width: 18px; 
   display: inline-block;
-  background: url(../img/btn_arr.png) no-repeat;
+  position: absolute;
+  top: 14px;
+  right: 21px;
+}
+
+.btn:hover {
+  background: #1c5bc4;
+}
+
+ button.btn, .btn_text:hover {
+  color: #fff;
+}
+
+.icon-main:hover {
+  background-image: url(../img/btn_arrow.png) no-repeat;
+  background-position: -18px 0px;
 }
