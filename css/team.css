@@ -12,14 +12,19 @@ a {
   min-height: calc(100vh-75px);
 }
 
+.container {
+  width: 1060px;
+  position: relative;
+}
+
 header {
   background: #1c5bc3;
   color: #fff;
   display: inline-block;
-  width: 100%;
   text-align: right;
   position: relative;
   height: 75px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -46,24 +51,28 @@ header {
 
 .sidebar {
   display: block;
-  width: 160px;
-  padding: 20px;
+  width: 100px;
+  padding: 28px 20px 0 0;
   margin: 0;
   float: left;
 
 }
 
 .sb-menu__item {
+  display: block;
+  position: relative;
+  padding: 8px;
+}
+
+.sb-menu__item > a {
   font-family: 'Roboto-Bold';
   font-weight: 700;
   color: #1c5bc3;
   text-transform: uppercase;
   line-height: 40px;
-  display: block;
-  position: relative;
-  padding: 8px;
 }
-.sb-menu__item .active {
+
+.sb-menu__item.active > a {
   color: #000;
 }
 
@@ -72,17 +81,17 @@ header {
   width: 28px;
   height: 24px;
   position: absolute;
-  left: -35px;
+  left: -20px;
   top: 18px;
 }
 
-.sb-menu__icon--team.active{
+.sb-menu__icon--team{
   background-image: url(../img/icons.png);
   background-position: -28px -25px;
   width: 28px;
   height: 26px;
   position: absolute;
-  left: -38px;
+  left: -25px;
   top: 17px;
 }
 
@@ -92,23 +101,29 @@ header {
   width: 28px;
   height: 24px;
   position: absolute;
-  left: -33px;
+  left: -19px;
   top: 15px;
 }
 
 .wr_items {
   display: inline-block;
-  width: 880px;
   float: right;
 }
-.breadcrumb li {
+
+.breadcrumbs li {
+  padding-top: 45px;
   font-family: 'Roboto-LightItalic';
   font-size: 14px;
+  color: #1c5bc3;
   text-transform: capitalize;
   display: inline-block;
 }
 
-.breadcrumb li:first-child:after {
+.breadcrumbs a {
+  color: #1c5bc3;
+}
+
+.breadcrumbs li:first-child:after {
   content: "/ ";
 }
 
@@ -116,6 +131,8 @@ header {
   font-family: 'Roboto-Bold'; 
   font-size: 49px;
   text-transform: capitalize;
+  width: 100%;
+  padding-left: 30px;
 }
 
 .wr-item__team-mem {
@@ -124,6 +141,21 @@ header {
   vertical-align: top;
   width: 270px;
   text-align: center;
+}
+
+.wr-item__team-mem--name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.wr-item__team-mem--position {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1c5bc3;
+}
+
+.wr-item__team-mem--descrip {
+  font-size: 14px;
 }
 .avatar {
   width: 160px;
