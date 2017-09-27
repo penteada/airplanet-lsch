@@ -9,7 +9,11 @@
   min-height: calc(100vh-75px);
   margin: 0 auto;
 }
-
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .container {
   width: 1060px;
   margin: 0 auto;
@@ -26,10 +30,8 @@ header {
 }
 
 .h__logo {
-  padding: 20px 0 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
+  padding: 20px;
 }
 
 .header__contact-phone {
@@ -44,6 +46,7 @@ header {
   line-height: 10px;
   padding: 0 20px 0 0;
 }
+
 .header__contact-hours::first-letter {
   text-transform: capitalize;
 }
@@ -54,7 +57,6 @@ header {
   padding: 28px 0 0 0;
   margin: 0;
   float: left;
-
 }
 
 .sb-menu__item {
@@ -63,7 +65,7 @@ header {
   padding: 5px;
 }
 
-.sb-menu__item > a {
+.sb-menu__item>a {
   font-family: 'Roboto-Bold';
   font-weight: 700;
   font-size: 14px;
@@ -73,7 +75,7 @@ header {
   line-height: 40px;
 }
 
-.sb-menu__item.active > a {
+.sb-menu__item.active>a {
   color: #000;
 }
 
@@ -128,7 +130,6 @@ header {
   color: #000;
 }
 
-
 .breadcrumbs li:first-child:after {
   content: " / ";
 }
@@ -165,6 +166,7 @@ header {
 .wr-item__team-mem--descrip {
   font-size: 14px;
 }
+
 .avatar {
   width: 160px;
   height: 160px;
@@ -192,9 +194,9 @@ footer {
 }
 
 .ft__author {
-  padding: 13px 20px 0 20px;
-  width: 250px;
-  line-height: 18px;
+  padding: 13px 0 0 20px;
+  width: 260px;
+  line-height: 20px;
   letter-spacing: .5px;
   text-align: left;
   display: inline-block;
@@ -205,10 +207,9 @@ footer span {
 }
 
 .ft__logo {
- bottom: 20px;
- position: absolute;
- left: 46%;
- bottom: 10px;
+  top: 20px;
+  position: absolute;
+  left: 46%;
 }
 
 .ft__social--title {
@@ -216,7 +217,7 @@ footer span {
   display: inline-block;
   position: absolute;
   right: 0px;
-  bottom: 30px;
+  top: 20px;
 }
 
 .ft__socials__item--vk {
@@ -260,7 +261,6 @@ footer span {
 }
 
 .ft__socials__item--email {
-
   background-image: url(../img/socials.png);
   background-position: -117px 0;
   width: 25px;
@@ -269,7 +269,6 @@ footer span {
   right: 0px;
   top: 40px;
 }
-
 
 li.ft__socials__item--vk:hover {
   background-image: url(../img/socials.png);
