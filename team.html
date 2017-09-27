@@ -12,15 +12,15 @@
 
 <body>
   <div class="wrapper">
-    <div class="container">
-      <header>
+    <header>
+      <div class="container">
         <img class="h__logo" src="img/logo.png" alt="logo" />
         <div class="header__right">
           <div class="header__contact-phone">8 (800) 00-392-10</div>
           <div class="header__contact-hours">график работы</div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
     <div class="container">
       <div class="sidebar">
         <nav class="sb-menu">
@@ -42,8 +42,8 @@
       </div>
       <div class="wr_items">
         <ul class="breadcrumbs">
-          <li><a href="#" class="breadcrumbs__item">главная</a></li>
-          <li><a href="#" class="breadcrumbs__item">экипаж</a></li>
+          <li class="breadcrumbs__item"><a href="#">главная</a></li>
+          <li class="breadcrumbs__item"><a href="#">экипаж</a></li>
         </ul>
         <h2 class="wr-header">экипаж</h2>
         <div class="wr-item__team-mem">
@@ -96,22 +96,35 @@
         </div>
       </div>
     </div>
-  <div class="container"><footer>
-    <div class="ft__author">Сделано с любовью и старанием на курсе "HTML + CSS" в <span class="ft__author--bold">Loftschool.</span><br>Автор работы: <span class="ft__author--bold">Жукова Анастасия</span>
-    </div>
-    <img class="ft__logo" src="img/logo.png" alt="logo" />
-    <div class="ft__social">
-      <div class="ft__social--title">Наши социальные сети</div>
-      <ul class="ft__socials__list">
-        <a href="#"><li class="ft__socials__item--vk"></li></a>
-        <a href="#"><li class="ft__socials__item--fb"></li></a>
-        <a href="#"><li class="ft__socials__item--gpl"></li></a>
-        <a href="#"><li class="ft__socials__item--tw"></li></a>
-        <a href="#"><li class="ft__socials__item--email"></li></a>
-      </ul>
-    </div>
-  </footer>
-  </div>
+    <footer>
+      <div class="container">
+        <div class="ft__author">Сделано с любовью и старанием на курсе "HTML + CSS" в <span class="ft__author--bold">Loftschool.</span><br>Автор работы: <span class="ft__author--bold">Жукова Анастасия</span>
+        </div>
+        <a href="#" class="logo"><img class="ft__logo" src="img/logo.png" alt="logo"/></a>
+        <div class="ft__social">
+          <div class="ft__social--title">Наши социальные сети</div>
+          <ul class="ft__socials__list">
+            <a href="#">
+              <li class="ft__socials__item--vk"></li>
+            </a>
+            <a href="#">
+              <li class="ft__socials__item--fb"></li>
+            </a>
+            <a href="#">
+              <li class="ft__socials__item--gpl"></li>
+            </a>
+            <a href="#">
+              <li class="ft__socials__item--tw"></li>
+            </a>
+            <a href="#">
+              <li class="ft__socials__item--email"></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
   </div>
 </body>
+
 </html>

@@ -5,18 +5,16 @@
   margin: 0;
 }
 
-a {
-  color: #000;
-}
 .wrapper {
   min-height: calc(100vh-75px);
-
+  margin: 0 auto;
 }
 
 .container {
   width: 1060px;
   margin: 0 auto;
   position: relative;
+  display: inline-block;
 }
 
 header {
@@ -25,11 +23,10 @@ header {
   text-align: right;
   height: 75px;
   width: 100%;
-  margin-bottom: 30px;
 }
 
 .h__logo {
-  padding: 20px;
+  padding: 20px 0 0 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,13 +34,15 @@ header {
 
 .header__contact-phone {
   font-family: 'Roboto-Bold';
-  font-size: 16px;
+  font-size: 19px;
+  letter-spacing: .9px;
   padding: 20px 20px 10px 0;
 }
 
 .header__contact-hours {
-  font-size: 12px;
-  padding: 0 20px 20px 0;
+  font-size: 14px;
+  line-height: 10px;
+  padding: 0 20px 0 0;
 }
 .header__contact-hours::first-letter {
   text-transform: capitalize;
@@ -61,12 +60,14 @@ header {
 .sb-menu__item {
   display: block;
   position: relative;
-  padding: 8px;
+  padding: 5px;
 }
 
 .sb-menu__item > a {
   font-family: 'Roboto-Bold';
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.4px;
   color: #1c5bc3;
   text-transform: uppercase;
   line-height: 40px;
@@ -85,7 +86,7 @@ header {
   top: 18px;
 }
 
-.sb-menu__icon--team{
+.sb-menu__icon--team {
   background-image: url(../img/icons.png);
   background-position: -28px -25px;
   width: 28px;
@@ -108,10 +109,11 @@ header {
 .wr_items {
   display: inline-block;
   float: right;
+  width: 880px;
+  margin: 43px 20px 53px 0;
 }
 
 .breadcrumbs li {
-  padding-top: 45px;
   font-family: 'Roboto-LightItalic';
   font-size: 14px;
   text-transform: capitalize;
@@ -128,7 +130,7 @@ header {
 
 
 .breadcrumbs li:first-child:after {
-  content: "/ ";
+  content: " / ";
 }
 
 .wr-header {
@@ -136,20 +138,22 @@ header {
   font-size: 49px;
   text-transform: capitalize;
   width: 100%;
-  padding-left: 30px;
+  margin: 15px 0 0 34px;
 }
 
 .wr-item__team-mem {
   display: inline-block;
-  padding-right: 20px;
   vertical-align: top;
-  width: 270px;
+  width: 290px;
+  line-height: 22px;
+  letter-spacing: 1px;
   text-align: center;
+  margin: 20px 0 0 0;
 }
 
 .wr-item__team-mem--name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .wr-item__team-mem--position {
@@ -165,7 +169,7 @@ header {
   width: 160px;
   height: 160px;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 0 20px 45px;
   margin: 0 auto;
 }
 
@@ -189,8 +193,9 @@ footer {
 
 .ft__author {
   padding: 13px 20px 0 20px;
-  width: 230px;
-  line-height: 15px;
+  width: 250px;
+  line-height: 18px;
+  letter-spacing: .5px;
   text-align: left;
   display: inline-block;
 }
@@ -202,16 +207,16 @@ footer span {
 .ft__logo {
  bottom: 20px;
  position: absolute;
- left: 45%;
- bottom: 20px;
+ left: 46%;
+ bottom: 10px;
 }
 
 .ft__social--title {
   text-align: right;
   display: inline-block;
   position: absolute;
-  right: 20px;
-  bottom: 43px;
+  right: 0px;
+  bottom: 30px;
 }
 
 .ft__socials__item--vk {
@@ -220,7 +225,7 @@ footer span {
   width: 25px;
   height: 23px;
   position: absolute;
-  right: 150px;
+  right: 114px;
   top: 40px;
 }
 
@@ -230,7 +235,7 @@ footer span {
   width: 25px;
   height: 23px;
   position: absolute;
-  right: 120px;
+  right: 87px;
   top: 40px;
 }
 
@@ -240,17 +245,17 @@ footer span {
   width: 25px;
   height: 23px;
   position: absolute;
-  right: 90px;
+  right: 59px;
   top: 40px;
 }
 
 .ft__socials__item--tw {
   background-image: url(../img/socials.png);
   background-position: -86px 0;
-  width: 25px;
+  width: 30px;
   height: 23px;
   position: absolute;
-  right: 60px;
+  right: 25px;
   top: 40px;
 }
 
@@ -261,7 +266,7 @@ footer span {
   width: 25px;
   height: 23px;
   position: absolute;
-  right: 30px;
+  right: 0px;
   top: 40px;
 }
 

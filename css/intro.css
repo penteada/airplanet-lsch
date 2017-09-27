@@ -6,13 +6,19 @@ body {
   background-size: cover;
 }
 
-.wrapper {
+.wrapper__intro {
   display: block;
   text-align: center;
   transform: translateY(60%);
+  width: 210px;
+  margin: 0 auto;
 }
 
-button.btn {
+a {
+  text-decoration: none;
+}
+
+.btn {
   border: solid 1px #1c5bc3;
   border-radius: 3px;
   background-color: transparent;
@@ -20,41 +26,26 @@ button.btn {
   width: 207px;
   height: 45px;
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
-a {
-  text-decoration: none;
-}
-button .btn_text {
+
+.btn_text {
   color: #1c5bc4;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   text-transform: uppercase;
-  padding-right: 12px;
+  padding: 0 18px 0 0;
 }
 
-button .icon-main {
+ .icon-main {
   background-image: url(../img/btn_arrow.png);
   height: 14px;
-  width: 18px; 
+  width: 18px;
   display: inline-block;
   position: absolute;
   top: 14px;
-  right: 21px;
-}
-
-.btn:hover {
-  background: #1c5bc4;
-}
-
- button.btn, .btn_text:hover {
-  color: #fff;
-}
-
-.icon-main:hover {
-  background-image: url(../img/btn_arrow.png) no-repeat;
-  background-position: -18px 0px;
+  right: 24px;
 }
