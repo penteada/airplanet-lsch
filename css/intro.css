@@ -9,7 +9,7 @@ body {
 .wrapper__intro {
   display: block;
   text-align: center;
-  transform: translateY(60%);
+  transform: translateY(68%);
   width: 210px;
   margin: 0 auto;
 }
@@ -22,6 +22,7 @@ a {
   border: solid 1px #1c5bc3;
   border-radius: 3px;
   background-color: transparent;
+  margin: 28px 0 0 0;
   padding: 3px 18px;
   width: 207px;
   height: 45px;
@@ -34,10 +35,10 @@ a {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: bold;
-  letter-spacing: 1px;
+  letter-spacing: 2.7px;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 18px 0 0;
+  padding: 0 20px 0 0;
 }
 
  .icon-main {
@@ -46,6 +47,31 @@ a {
   width: 18px;
   display: inline-block;
   position: absolute;
-  top: 14px;
-  right: 24px;
+  top: 15px;
+  right: 18px;
+}
+.btn:hover {
+  border: solid 1px #1c5bc3;
+  border-radius: 3px;
+  background-color: #1c5bc3;
+  padding: 3px 18px;
+  width: 207px;
+  height: 45px;
+  display: inline-block;
+  position: relative;
+}
+
+.btn_text:hover {
+  color: #fff;
+}
+
+ .icon-main:hover {
+  background-image: url(../img/btn_arrow.png);
+  background-position: 18px 0px;
+  height: 14px;
+  width: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 18px;
 }
