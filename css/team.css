@@ -55,6 +55,7 @@ header {
 }
 
 .tooltip {
+  background: #fff;
   text-align: center;
   display: block;
   position: absolute;
@@ -117,6 +118,14 @@ header {
   display: block;
   position: relative;
   padding: 10px 10px 10px 0;
+}
+
+.sb-menu__item::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 14px;
 }
 
 .sb-menu__item > a {
@@ -420,7 +429,11 @@ li.ft__socials__item--email:hover {
 /* about company main block styles */
 
 .bg__header {
-  background-image: url(../img/bg-head.jpg) no-repeat;
+  background-image: url(../img/bg-head.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: 0 0;
   display: block;
   height: 353px;
@@ -428,8 +441,12 @@ li.ft__socials__item--email:hover {
 
 }
 
+.bg__header {
+  margin-top: -13px;
+}
+
 .about-company {
-  transform: translateY(190%);
+  padding-top: 150px;
 }
 
 .about-company__text > p > span, p.white-text > span {
@@ -474,12 +491,11 @@ p.white-text::after {
   width: 600px;
 }
 
-ul.partners {
+.partners {
   font-family: 'Roboto-Bold';
   font-size: 49px;
   font-weight: 700;
-  margin: 75px 0 0 0;
-  padding: 75px 0 0 0;
+  padding: 75px 0 70px 0;
   text-transform: capitalize;
 }
 .partners {
@@ -496,9 +512,9 @@ li.ico__grey {
   background-image: url(../img/logos.png);
   background-position: 0 0;
   width:167px;
-  height: 55px;
+  height: 75px;
   position: relative;
-  top: 20px;
+  top: 43px;
   left: 0px;
   filter: grayscale(100%);
 }
@@ -530,7 +546,7 @@ li.ico__grey {
   width:150px;
   height: 75px;
   position: relative;
-  top: 50px;
+  top: 70px;
   left: 0px;
   filter: grayscale(100%);
 }
@@ -541,7 +557,7 @@ li.ico__grey {
   width:150px;
   height: 75px;
   position: relative;
-  top: 50px;
+  top: 70px;
   left: 170px;
   filter: grayscale(100%);
 }
@@ -552,7 +568,7 @@ li.ico__grey {
   width:150px;
   height: 75px;
   position: relative;
-  top: 50px;
+  top: 70px;
   left: 230px;
   filter: grayscale(100%);
 }
