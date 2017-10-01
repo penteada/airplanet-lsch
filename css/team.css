@@ -58,8 +58,8 @@ header {
   text-align: center;
   display: block;
   position: absolute;
-  top: 76px;
-  right: 25px;
+  top: 2px;
+  right: 5px;
   width: 170px;
   height: 60px;
   border: 1px solid #000;
@@ -75,13 +75,13 @@ header {
   top: -20px;
   right: 0;
   border: 10px solid transparent;
-  border-bottom: 10px solid black;
+  border-bottom: 15px solid black;
 }
 
 .tooltip::after {
-  top: -19px;
+  top: -20px;
   right: 0;
-  border-bottom: 10px solid white;
+  border-bottom: 15px solid white;
 }
 
 .tooltip__text {
@@ -98,7 +98,7 @@ header {
 .tooltip::before {
   content: "";
   width: 100px;
-  height: 50px;
+  height: 100px;
 }
 
 .tooltip:hover {
@@ -119,7 +119,7 @@ header {
   padding: 10px 10px 10px 0;
 }
 
-.sb-menu__item>a {
+.sb-menu__item > a {
   font-family: 'Roboto-Bold';
   font-weight: 700;
   font-size: 14px;
@@ -129,7 +129,11 @@ header {
   line-height: 40px;
 }
 
-.sb-menu__item.active>a {
+.sb-menu__item > a:hover {
+  color: #000;
+}
+
+.sb-menu__item.active > a {
   color: #000;
 }
 
@@ -142,19 +146,49 @@ header {
   top: 18px;
 }
 
+.sb-menu__icon--main:hover, .sb-menu__icon--main.active {
+  background-image: url(../img/icons.png);
+  background-position: 25px 0;
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  left: -40px;
+  top: 18px;
+}
+
 .sb-menu__icon--team {
+  background-image: url(../img/icons.png);
+  background-position: 0 -25px;
+  width: 28px;
+  height: 26px;
+  position: absolute;
+  left: -39px;
+  top: 18px;
+}
+
+.sb-menu__icon--team:hover, .sb-menu__icon--team.active {
   background-image: url(../img/icons.png);
   background-position: -28px -25px;
   width: 28px;
   height: 26px;
   position: absolute;
-  left: -46px;
+  left: -45px;
   top: 18px;
 }
 
 .sb-menu__icon--feedback {
   background-image: url(../img/icons.png);
   background-position: 0 -50px;
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  left: -38px;
+  top: 18px;
+}
+
+.sb-menu__icon--feedback:hover, .sb-menu__icon--feedback.active {
+  background-image: url(../img/icons.png);
+  background-position: 26px -50px;
   width: 28px;
   height: 24px;
   position: absolute;
@@ -171,7 +205,9 @@ header {
 
 .breadcrumbs li {
   font-family: 'Roboto-LightItalic';
+  font-style: italic;
   font-size: 14px;
+  text-decoration: underline;
   text-transform: capitalize;
   display: inline-block;
 }
@@ -180,8 +216,9 @@ header {
   color: #1c5bc3;
 }
 
-.breadcrumbs li:last-child {
+.last {
   color: #000;
+  text-decoration: none;
 }
 
 .breadcrumbs li:after {
@@ -192,12 +229,14 @@ header {
   content: " ";
 }
 
-.wr-header {
+.wr-header, .about-company {
   font-family: 'Roboto-Bold';
   font-size: 49px;
-  text-transform: capitalize;
   width: 100%;
   margin: 15px 0 0 39px;
+}
+.wr-header::first-letter, .about-company::first-letter {
+  text-transform: capitalize;
 }
 
 .wr-item__team-mem {
@@ -205,7 +244,7 @@ header {
   vertical-align: top;
   width: 290px;
   line-height: 22px;
-  letter-spacing: .3px;
+  letter-spacing: .4px;
   text-align: center;
   margin: 20px 0 0 0;
 }
@@ -213,6 +252,7 @@ header {
 .wr-item__team-mem--name {
   font-weight: 700;
   font-size: 17px;
+  letter-spacing: 0;
 }
 
 .wr-item__team-mem--position {
@@ -252,7 +292,7 @@ footer {
 }
 
 .ft__author {
-  padding: 13px 0 0 20px;
+  padding: 13px 0 0 0;
   width: 260px;
   line-height: 20px;
   letter-spacing: .5px;
@@ -351,8 +391,8 @@ li.ft__socials__item--fb:hover {
 li.ft__socials__item--gpl:hover {
   background-image: url(../img/socials.png);
   background-position: -56px 26px;
-  width: 25px;
   height: 23px;
+  width: 25px;
   position: absolute;
   right: 59px;
   top: 39px;
@@ -376,4 +416,147 @@ li.ft__socials__item--email:hover {
   position: absolute;
   right: 0px;
   top: 40px;
+}
+/* about company main block styles */
+
+.bg__header {
+  background-image: url(../img/bg-head.jpg) no-repeat;
+  background-position: 0 0;
+  display: block;
+  height: 353px;
+  width: 880px;
+
+}
+
+.about-company {
+  transform: translateY(190%);
+}
+
+.about-company__text > p > span, p.white-text > span {
+  font-weight: 700;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.about-company__text {
+  display: block;
+  width: 700px;
+  line-height: 30px;
+}
+
+ul.about-company__text--list > li {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li.about-company__text--list-dotdecor {
+  list-style: disc;
+  list-style-position:outside;
+}
+
+p, .about-company__text--list , li.about-company__text--list-dotdecor  {
+  margin: 0 0 17px 0;
+}
+
+.blue-block {
+  background: #1c5bc3;
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 0px 10px 20px;
+}
+p.white-text::after {
+  margin: 0;
+}
+.white-text {
+  width: 600px;
+}
+
+ul.partners {
+  font-family: 'Roboto-Bold';
+  font-size: 49px;
+  font-weight: 700;
+  margin: 75px 0 0 0;
+  padding: 75px 0 0 0;
+  text-transform: capitalize;
+}
+.partners {
+  display: block;
+  position: relative;
+  width: 700px;
+
+}
+li.ico__grey {
+  display: inline-block;
+}
+
+.ico__grey.one {
+  background-image: url(../img/logos.png);
+  background-position: 0 0;
+  width:167px;
+  height: 55px;
+  position: relative;
+  top: 20px;
+  left: 0px;
+  filter: grayscale(100%);
+}
+.ico__grey.two {
+  background-image: url(../img/logos.png);
+  background-position: 460px 0;
+  width:260px;
+  height: 75px;
+  position: relative;
+  top: 40px;
+  left: 80px;
+  filter: grayscale(100%);
+}
+
+.ico__grey.three {
+  background-image: url(../img/logos.png);
+  background-position: 150px 0;
+  width:150px;
+  height: 75px;
+  position: relative;
+  top: 40px;
+  left: 110px;
+  filter: grayscale(100%);
+}
+
+.ico__grey.four {
+  background-image: url(../img/logos.png);
+  background-position: 0 100px;
+  width:150px;
+  height: 75px;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  filter: grayscale(100%);
+}
+
+.ico__grey.five {
+  background-image: url(../img/logos.png);
+  background-position: 390px 100px;
+  width:150px;
+  height: 75px;
+  position: relative;
+  top: 50px;
+  left: 170px;
+  filter: grayscale(100%);
+}
+
+.ico__grey.six {
+  background-image: url(../img/logos.png);
+  background-position: 150px 100px;
+  width:150px;
+  height: 75px;
+  position: relative;
+  top: 50px;
+  left: 230px;
+  filter: grayscale(100%);
+}
+
+.ico__grey:hover {
+  filter: none;
 }
