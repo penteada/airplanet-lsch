@@ -14,72 +14,58 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
+button.btn {
   border: solid 1px #1c5bc3;
   border-radius: 3px;
   background-color: transparent;
   margin: 28px 0 0 0;
-  padding: 3px 18px;
   width: 207px;
   height: 45px;
-  display: inline-block;
-  position: relative;
 }
 
-.btn_text {
-  color: #1c5bc4;
-  font-family: 'Roboto', sans-serif;
+a.btn__link {
+  display: block;
+  position: relative;
+  font-family: 'Roboto';
   font-size: 12px;
   font-weight: bold;
+  color: #1c5bc3;
   letter-spacing: 1px;
-  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
-  padding: 0 20px 0 0;
+  margin-left: -18px;
 }
 
- .icon-main {
-  background-image: url(../img/btn_arrow.png);
-  height: 14px;
+a.btn__link::after {
+  content: " ";
+  background-image: url('../img/btn_arrow.png');
+  height: 13px;
   width: 18px;
-  display: inline-block;
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 18px;
 }
-button:hover {
+
+button.btn:hover {
   border: solid 1px #1c5bc3;
   border-radius: 3px;
   background-color: #1c5bc3;
-  padding: 3px 18px;
   width: 207px;
   height: 45px;
-  display: inline-block;
-  position: relative;
 }
 
-.btn_text:hover {
+a.btn__link:hover {
   color: #fff;
+  cursor: pointer;
 }
 
- .icon-main:hover {
-  background-image: url(../img/btn_arrow.png);
+a.btn__link:hover::before {
+  content: " ";
+  background-image: url('../img/btn_arrow.png');
   background-position: 18px 0px;
   height: 14px;
   width: 18px;
-  display: inline-block;
   position: absolute;
-  top: 15px;
+  top: 1px;
   right: 18px;
-}
-
-.icon-main::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 100px;
-  height: 45px;
 }
