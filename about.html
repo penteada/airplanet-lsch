@@ -14,25 +14,25 @@
   <div class="wrapper">
     <header>
       <div class="container clearfix">
-        <a href="#"><img class="h__logo" src="img/logo.png" alt="logo" /></a>
-        <ul class="header__right">
-          <li class="header__phone">8 (800) 00-392-10</li>
-          <li class="header__tooltip">график работы</li>
-        </ul>
+        <a href="about.html"><img class="h__logo" src="img/logo.png" alt="logo" /></a>
+        <div class="header__right">
+          <div class="header__phone">8 (800) 00-392-10</div>
+          <div class="header__tooltip">график работы</div>
+          <div class="tooltip">
+            <div class="tooltip__text"><span>пн-вс: 09:00 - 20:00</span></div>
+            <div class="tooltip__text">обед: 14:00 - 14:30</div>
+          </div>
+        </div>
       </div>
     </header>
     <div class="container clearfix">
-      <div class="tooltip">
-        <li class="tooltip__text"><span>пн-вс: 09:00 - 20:00</span></li>
-        <li class="tooltip__text">обед: 14:00 - 14:30</li>
-      </div>
       <div class="sidebar">
         <ul class="sb-menu">
           <li class="sb-menu__item">
             <a class="sb-menu__link sb-menu__link--main" href="about.html">главная</a>
           </li>
-          <li class="sb-menu__item active">
-            <a class="sb-menu__link sb-menu__link--team active" href="team.html">экипаж</a>
+          <li class="sb-menu__item">
+            <a class="sb-menu__link sb-menu__link--team" href="team.html">экипаж</a>
           </li>
           <li class="sb-menu__item">
             <a class="sb-menu__link sb-menu__link--feedback" href="#">отзывы</a>
@@ -43,7 +43,7 @@
         <div class="bg__header">
           <h2 class="about-company">о компании</h2>
         </div>
-        <div class="about-company__text clearfix">
+        <div class="about-company__text">
           <p><span class="capitalize">air planet </span>— это крупнейшая авиакомпания в Москве. Благодаря сотрудничеству с <span class="capitalize">europe airlines</span>, мы предлагаем билеты на комфортабельные рейсы в большинство известных курортных городов
             Западной Европы. Также мы сотрудничаем с американскими и австралийскими авиакомпаниями, за счет чего обеспечиваем возможность заказа билетов на рейсы практически в любую точку мира.</p>
           <ul>
@@ -59,15 +59,17 @@
         <div class="about-company__text blue-block">
           <p class="white-text">Бронировать билеты в нашей авиакомпании удобно. Для этого можно оставить <span>заявку на сайте</span> или же позвонить по номеру круглосуточной поддержки <span>8 (800) 00-392-10.</span></p>
         </div>
-        <ul class="partners clearfix">
-          <li class="partners-header">партнёры</li>
+        <div class="partners">
+          <h3 class="partners-header">партнёры</h3>
+          <ul class="partners__icons">
           <li class="ico__grey one"><a href="#"></a></li>
           <li class="ico__grey two"><a href="#"></a></li>
           <li class="ico__grey three"><a href="#"></a></li>
           <li class="ico__grey four"><a href="#"></a></li>
           <li class="ico__grey five"><a href="#"></a></li>
           <li class="ico__grey six"><a href="#"></a></li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
     <footer>

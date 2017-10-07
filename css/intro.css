@@ -46,6 +46,10 @@ a.btn__link::after {
   right: 18px;
 }
 
+a.btn__link::after:hover {
+  opacity: 0;
+}
+
 button.btn:hover {
   border: solid 1px #1c5bc3;
   border-radius: 3px;
