@@ -244,7 +244,8 @@ a.last {
   content: " ";
 }
 
-.wr__header, .about-company {
+.wr__header, .about-company,
+.form__header {
   font-family: 'Roboto-Bold';
   font-size: 49px;
   width: 100%;
@@ -645,7 +646,7 @@ li.ico__grey {
 hr.grey__line {
   border-top: 1px solid #DCDCDC;
   display: inline-block;
-  width: 1060px;
+  width: 900px;
 }
 
 .pagination {
@@ -666,7 +667,9 @@ ul.pages > li {
   color: #696969;
 
 }
-.page__pagination::first-letter {
+.page__pagination::first-letter,
+.form-item__name::first-letter,
+.form__header::first-letter {
   text-transform: capitalize;
 }
 
@@ -705,4 +708,17 @@ ul.pages > li {
   font-family: 'Roboto-Bold';
   font-weight: 700;
   padding: 5px;
+}
+
+input {
+  border: 1px solid #696969;
+  border-radius: 3px;
+}
+
+input:focus {
+    border: 1px solid #1c5bc3;
+    border-radius: 3px;
+}
+label.radio:focus {
+  border: 1px solid #1c5bc3;
 }
