@@ -101,11 +101,11 @@
           <form action="" class="form__section">
             <h2 class="form__header">Оставить отзыв</h2>
             <div class="form__row clearfix">
-              <div class="form_row-left">
+              <div class="form__row-left">
                 <label for="name" class="form__field-title">Ваше имя</label>
                 <input type="text" name="name" value="" placeholder="Андрей" class="form__input-area">
               </div>
-              <div class="form_row-right">
+              <div class="form__row-right">
                 <label for="link" class="form__field-title">Ссылка на профиль VK </label>
                 <input type="text" name="link" value="" placeholder="vk.com/examlple" class="form__input-area">
               </div>
@@ -114,16 +114,16 @@
               <label for="comments" class="form__field-title">Текст отзыва</label>
               <textarea name="comments" class="form__comments-field" placeholder="Мне понравилось"></textarea>
             </div>
-            <div class="form__row">
-              <div class="form__radios">
+            <div class="form__row clearfix">
+              <div class="form__radios form__row-left">
                 <div class="form__field-title">Отображать фото в отзыве?</div>
                 <div class="form__radio">
-                  <input type="radio" class="radio__btn check" name="yes" value="" checked>
-                  <label for="yes">Да</label>
+                  <input type="radio" class="radio__btn" name="radio" id="radio__btn-1">
+                  <label class="radio__btn" for="radio__btn-1">Да</label>
                 </div>
                 <div class="form__radio">
-                  <input type="radio" class="radio__btn check" name="no" value="">
-                  <label for="no">Нет</label>
+                  <input type="radio" class="radio__btn" name="radio" id="radio__btn-2">
+                  <label class="radio__btn" for="radio__btn-2">Нет</label>
                 </div>
               </div>
               <button type="submit" name="button" class="form__submit-btn">отправить</button>
