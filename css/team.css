@@ -116,12 +116,12 @@
   float: left;
 }
 
-.sb-menu__item {
+.sidebar-menu__item {
   display: block;
   position: relative;
 }
 
-a.sb-menu__link {
+a.sidebar-menu__link {
   font-family: 'Roboto-Bold';
   font-weight: 700;
   font-size: 14px;
@@ -133,11 +133,11 @@ a.sb-menu__link {
   position: relative;
 }
 
-.sb-menu__link:hover {
+.sidebar-menu__link:hover {
   color: #000;
 }
 
-.sb-menu__link--main::before {
+.sidebar-menu__link--main::before {
   content: " ";
   background-image: url(../img/icons.png);
   width: 28px;
@@ -147,14 +147,14 @@ a.sb-menu__link {
   top: 10px;
 }
 
-.sb-menu__link--main:hover::before,
-.sb-menu__link--team:hover::before,
-.sb-menu__link--feedback:hover::before,
+.sidebar-menu__link--main:hover::before,
+.sidebar-menu__link--team:hover::before,
+.sidebar-menu__link--feedback:hover::before,
  {
   opacity: 0;
 }
 
-.sb-menu__link--main:hover::after {
+.sidebar-menu__link--main:hover::after {
   content: " ";
   background-image: url(../img/icons.png);
   background-position: 25px 0;
@@ -165,7 +165,7 @@ a.sb-menu__link {
   top: 10px;
 }
 
-.sb-menu__link--team::before {
+.sidebar-menu__link--team::before {
   content: " ";
   background-image: url(../img/icons.png);
   background-position: 0 -25px;
@@ -176,7 +176,7 @@ a.sb-menu__link {
   top: 10px;
 }
 
-.sb-menu__link--team:hover::after {
+.sidebar-menu__link--team:hover::after {
   content: " ";
   background-image: url(../img/icons.png);
   background-position: -28px -25px;
@@ -187,7 +187,7 @@ a.sb-menu__link {
   top: 10px;
 }
 
-.sb-menu__link--feedback::before {
+.sidebar-menu__link--feedback::before {
   content: " ";
   background-image: url(../img/icons.png);
   background-position: 0 -50px;
@@ -198,7 +198,7 @@ a.sb-menu__link {
   top: 9px;
 }
 
-.sb-menu__link--feedback:hover::after {
+.sidebar-menu__link--feedback:hover::after {
   content: " ";
   background-image: url(../img/icons.png);
   background-position: 26px -50px;
@@ -209,7 +209,7 @@ a.sb-menu__link {
   top: 9px;
 }
 
-.wr__items {
+.content__items {
   display: inline-block;
   float: right;
   width: 900px;
@@ -242,7 +242,7 @@ a.sb-menu__link {
   content: " ";
 }
 
-.wr__header,
+.content__header,
 .about-company,
 .form__header {
   font-family: 'Roboto-Bold';
@@ -251,7 +251,7 @@ a.sb-menu__link {
   margin: 15px 0 0 39px;
 }
 
-.wr__header::first-letter,
+.content__header::first-letter,
 .about-company::first-letter {
   text-transform: capitalize;
 }
