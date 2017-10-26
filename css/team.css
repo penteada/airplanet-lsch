@@ -107,7 +107,7 @@
 .tooltip:hover {
   display: none;
 }
-
+/* SIDEBAR */
 .sidebar {
   display: block;
   width: 120px;
@@ -209,6 +209,7 @@ a.sidebar-menu__link {
   top: 9px;
 }
 
+/* MAIN */
 .content__items {
   display: inline-block;
   float: right;
@@ -298,6 +299,7 @@ a.sidebar-menu__link {
   height: 160px;
 }
 
+/*FOOTER */
 .footer {
   background: #1c5bc3;
   color: #fff;
